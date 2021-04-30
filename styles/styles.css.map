@@ -1,0 +1,12 @@
+{
+    "version": 3,
+    "mappings": "AAAA,OAAO,CAAC,yFAAI;AAKZ,AAAA,IAAI,CAAC;EACH,WAAW,EAAE,yBAAyB;CACvC",
+    "sources": [
+        "styles.scss",
+        "_desktop.scss",
+        "_tablet.scss",
+        "_mobile.scss"
+    ],
+    "names": [],
+    "file": "styles.css"
+}

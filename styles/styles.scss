@@ -1,0 +1,20 @@
+@import url("https://fonts.googleapis.com/css2?family=Public+Sans:wght@300;400;700&display=swap");
+@import "./desktop";
+@import "./tablet";
+@import "./mobile";
+
+body {
+  font-family: "Public Sans", sans-serif;
+}
+
+@media only screen and (max-width: 500px) {
+  @include mobileStyle;
+}
+
+@media only screen and (min-width: 501px) {
+  @include tabletStyle;
+}
+
+@media only screen and (min-width: 1025px) {
+  @include desktopStyle;
+}
