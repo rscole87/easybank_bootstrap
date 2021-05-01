@@ -1,4 +1,32 @@
 @mixin mobileStyle {
-  
+  nav {
+    z-index: 1;
+  }
 
+  #intro-section {
+    background-image: url(../images/bg-intro-mobile.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+
+    #intro-content-wrapper {
+      padding: 0;
+      position: relative;
+      top: -75px;
+
+      #intro-text-div {
+        margin: 0 0 30px 0;
+        & h1 {
+          margin: 40px 0 20px 0;
+        }
+      }
+
+      #header-image-div {
+        padding: 0;
+
+        & #image-mockups {
+          max-width: 100%;
+        }
+      }
+    }
+  }
 }

@@ -1,10 +1,66 @@
 @import url("https://fonts.googleapis.com/css2?family=Public+Sans:wght@300;400;700&display=swap");
+@import "./variables";
+@import "./mixins";
 @import "./desktop";
 @import "./tablet";
 @import "./mobile";
 
 body {
   font-family: "Public Sans", sans-serif;
+  @include bttnStyle;
+  @include headingStyle;
+  @include bodyCopyStyle;
+}
+
+#intro-section {
+  background-color: $veryLightGray;
+  & h1 {
+    font-weight: 300;
+  }
+}
+
+#services-section {
+  background-color: $lightGrayishBlue;
+  padding-top: 75px;
+  padding-bottom: 50px;
+
+  & .icon {
+    padding: 25px 0;
+  }
+}
+
+#articles-section {
+  background-color: $veryLightGray;
+  padding-top: 75px;
+
+  & .featured-article-div {
+    height: 425px;
+    padding-bottom: 25px;
+
+    & .article-image-div {
+      height: 50%;
+      overflow: hidden;
+      img {
+        width: 100%;
+        border-radius: 5px 5px 0 0;
+      }
+    }
+
+    & .article-text-div {
+      background-color: $white;
+      border-radius: 0 0 5px 5px;
+      height: 50%;
+      padding: 30px;
+
+      & p, .author{
+        font-size: 13px;
+      }
+    }
+  }
+}
+
+footer {
+  background-color: $darkBlue;
 }
 
 @media only screen and (max-width: 500px) {

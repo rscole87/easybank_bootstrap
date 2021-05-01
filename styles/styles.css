@@ -2,4 +2,104 @@
 body {
   font-family: "Public Sans", sans-serif;
 }
+
+body button {
+  padding: 10px 35px;
+  border-radius: 35px;
+  border: hidden;
+  background: linear-gradient(144deg, #31d35c, #2bb7da);
+  color: white;
+  font-size: 15px;
+}
+
+body h1, body h2, body h3, body h5, body h6 {
+  color: #2d314d;
+  font-weight: 300;
+}
+
+body .body-copy {
+  color: #9698a6;
+  font-weight: 300;
+}
+
+#intro-section {
+  background-color: #fafafa;
+}
+
+#intro-section h1 {
+  font-weight: 300;
+}
+
+#services-section {
+  background-color: #f3f4f6;
+  padding-top: 75px;
+  padding-bottom: 50px;
+}
+
+#services-section .icon {
+  padding: 25px 0;
+}
+
+#articles-section {
+  background-color: #fafafa;
+  padding-top: 75px;
+}
+
+#articles-section .featured-article-div {
+  height: 425px;
+  padding-bottom: 25px;
+}
+
+#articles-section .featured-article-div .article-image-div {
+  height: 50%;
+  overflow: hidden;
+}
+
+#articles-section .featured-article-div .article-image-div img {
+  width: 100%;
+  border-radius: 5px 5px 0 0;
+}
+
+#articles-section .featured-article-div .article-text-div {
+  background-color: white;
+  border-radius: 0 0 5px 5px;
+  height: 50%;
+  padding: 30px;
+}
+
+#articles-section .featured-article-div .article-text-div p, #articles-section .featured-article-div .article-text-div .author {
+  font-size: 13px;
+}
+
+footer {
+  background-color: #2d314d;
+}
+
+@media only screen and (max-width: 500px) {
+  nav {
+    z-index: 1;
+  }
+  #intro-section {
+    background-image: url(../images/bg-intro-mobile.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+  #intro-section #intro-content-wrapper {
+    padding: 0;
+    position: relative;
+    top: -75px;
+  }
+  #intro-section #intro-content-wrapper #intro-text-div {
+    margin: 0 0 30px 0;
+  }
+  #intro-section #intro-content-wrapper #intro-text-div h1 {
+    margin: 40px 0 20px 0;
+  }
+  #intro-section #intro-content-wrapper #header-image-div {
+    padding: 0;
+  }
+  #intro-section #intro-content-wrapper #header-image-div #image-mockups {
+    max-width: 100%;
+  }
+}
 /*# sourceMappingURL=styles.css.map */

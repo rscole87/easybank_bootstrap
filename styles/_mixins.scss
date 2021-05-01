@@ -1,0 +1,24 @@
+@mixin bttnStyle {
+  button {
+    padding: 10px 35px;
+    border-radius: 35px;
+    border: hidden;
+    background: linear-gradient(144deg, $limeGreen, $brightCyan);
+    color: $white;
+    font-size: 15px;
+  }
+}
+
+@mixin headingStyle {
+  & h1, h2, h3, h5, h6 {
+    color: $darkBlue;
+    font-weight: 300;
+  }
+}
+
+@mixin bodyCopyStyle {
+  .body-copy{
+    color: $grayishBlue;
+    font-weight: 300;
+  }
+}
